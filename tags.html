@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML - Guia Educacional</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #ffffff;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #ffa500;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #ffa500;
+            margin-bottom: 30px;
+            text-align: center;
+            border-bottom: 2px solid #ffa500;
+            padding-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .tag-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 165, 0, 0.3);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .tag-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 165, 0, 0.3);
+            border-color: #ffa500;
+        }
+
+        .tag-name {
+            font-size: 1.5rem;
+            color: #ffa500;
+            font-weight: bold;
+            margin-bottom: 12px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .tag-description {
+            font-size: 1rem;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 165, 0, 0.3);
+            color: #999;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Guia de Tags HTML</h1>
+
+        <!-- Tags Estruturais e Metadados -->
+        <section class="section">
+            <h2 class="section-title">Tags Estruturais e Metadados</h2>
+            <div class="grid">
+                <div class="tag-card">
+                    <div class="tag-name">&lt;HTML&gt;</div>
+                    <div class="tag-description">Documento HTML</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;META&gt;</div>
+                    <div class="tag-description">Informação de metadados</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;TITLE&gt;</div>
+                    <div class="tag-description">Título do documento</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;LINK&gt;</div>
+                    <div class="tag-description">Recurso externo</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;HEAD&gt;</div>
+                    <div class="tag-description">Cabeçalho do documento</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;BODY&gt;</div>
+                    <div class="tag-description">Corpo do documento</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tags Semânticas -->
+        <section class="section">
+            <h2 class="section-title">Tags Semânticas</h2>
+            <div class="grid">
+                <div class="tag-card">
+                    <div class="tag-name">&lt;MAIN&gt;</div>
+                    <div class="tag-description">Conteúdo principal</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;ARTICLE&gt;</div>
+                    <div class="tag-description">Artigo na página</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;SECTION&gt;</div>
+                    <div class="tag-description">Seção na página</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;ASIDE&gt;</div>
+                    <div class="tag-description">Seção separado do conteúdo</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;HEADER&gt;</div>
+                    <div class="tag-description">Cabeçalho</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;FOOTER&gt;</div>
+                    <div class="tag-description">Rodapé</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;NAV&gt;</div>
+                    <div class="tag-description">Conjunto links de navegação</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;H1&gt;</div>
+                    <div class="tag-description">Título (hierárquico)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tags de Texto e Formatação -->
+        <section class="section">
+            <h2 class="section-title">Tags de Texto e Formatação</h2>
+            <div class="grid">
+                <div class="tag-card">
+                    <div class="tag-name">&lt;P&gt;</div>
+                    <div class="tag-description">Parágrafo</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;SPAN&gt;</div>
+                    <div class="tag-description">Container genérico</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;PRE&gt;</div>
+                    <div class="tag-description">Texto pré-formatado</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;B&gt;</div>
+                    <div class="tag-description">Texto negrito</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;STRONG&gt;</div>
+                    <div class="tag-description">Texto com importância</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;EM&gt;</div>
+                    <div class="tag-description">Dar enfase em texto</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;I&gt;</div>
+                    <div class="tag-description">Texto itálico</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;CODE&gt;</div>
+                    <div class="tag-description">Fragmento de código</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;BR&gt;</div>
+                    <div class="tag-description">Quebra de linha</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;HR&gt;</div>
+                    <div class="tag-description">Linha horizontal</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tags de Listas e Estrutura -->
+        <section class="section">
+            <h2 class="section-title">Tags de Listas e Estrutura</h2>
+            <div class="grid">
+                <div class="tag-card">
+                    <div class="tag-name">&lt;UL&gt;</div>
+                    <div class="tag-description">Lista desordenada</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;OL&gt;</div>
+                    <div class="tag-description">Lista ordenada</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;LI&gt;</div>
+                    <div class="tag-description">Item de uma lista</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;DIV&gt;</div>
+                    <div class="tag-description">Elemento comum</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tags de Mídia -->
+        <section class="section">
+            <h2 class="section-title">Tags de Mídia</h2>
+            <div class="grid">
+                <div class="tag-card">
+                    <div class="tag-name">&lt;IMG&gt;</div>
+                    <div class="tag-description">Imagem</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;VIDEO&gt;</div>
+                    <div class="tag-description">Conteúdo de vídeo</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;AUDIO&gt;</div>
+                    <div class="tag-description">Conteúdo de som</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;CANVAS&gt;</div>
+                    <div class="tag-description">Desenho gráfico</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;SVG&gt;</div>
+                    <div class="tag-description">Container para gráficos SVG</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;IFRAME&gt;</div>
+                    <div class="tag-description">Quadro embutido</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tags de Formulários -->
+        <section class="section">
+            <h2 class="section-title">Tags de Formulários</h2>
+            <div class="grid">
+                <div class="tag-card">
+                    <div class="tag-name">&lt;FORM&gt;</div>
+                    <div class="tag-description">Seção de formulário</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;INPUT&gt;</div>
+                    <div class="tag-description">Controle interativo</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;TEXTAREA&gt;</div>
+                    <div class="tag-description">Campo de várias linhas</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;LABEL&gt;</div>
+                    <div class="tag-description">Legenda para um item</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;BUTTON&gt;</div>
+                    <div class="tag-description">Botão clicável</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tags de Tabelas -->
+        <section class="section">
+            <h2 class="section-title">Tags de Tabelas</h2>
+            <div class="grid">
+                <div class="tag-card">
+                    <div class="tag-name">&lt;TR&gt;</div>
+                    <div class="tag-description">Linhas da tabela</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;TD&gt;</div>
+                    <div class="tag-description">Dados da tabela</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tags de Script e Estilo -->
+        <section class="section">
+            <h2 class="section-title">Tags de Script e Estilo</h2>
+            <div class="grid">
+                <div class="tag-card">
+                    <div class="tag-name">&lt;SCRIPT&gt;</div>
+                    <div class="tag-description">Incorporar um script</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;STYLE&gt;</div>
+                    <div class="tag-description">Informações de estilo</div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-name">&lt;NOSCRIPT&gt;</div>
+                    <div class="tag-description">Script desativado</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tags de Links -->
+        <section class="section">
+            <h2 class="section-title">Tags de Links</h2>
+            <div class="grid">
+                <div class="tag-card">
+                    <div class="tag-name">&lt;A&gt;</div>
+                    <div class="tag-description">Link</div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Guia Educacional de Tags HTML | Inspirado em @iuricode</p>
+        </footer>
+    </div>
+</body>
+</html>
+
