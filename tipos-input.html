@@ -259,6 +259,133 @@
             display: flex;
             gap: 15px;
         }
+
+        /* Media Queries para Responsividade */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .section {
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+                margin-bottom: 30px;
+            }
+
+            .code-editor {
+                width: 100%;
+                min-width: 100%;
+                font-size: 12px;
+                padding: 15px;
+            }
+
+            .code-editor::before {
+                font-size: 10px;
+            }
+
+            .code-editor::after {
+                width: 10px;
+                height: 10px;
+                left: 80px;
+                box-shadow: 16px 0 0 #888888, 32px 0 0 #aaaaaa;
+            }
+
+            .code-editor code {
+                margin-top: 25px;
+                line-height: 1.8;
+            }
+
+            .input-container {
+                width: 100%;
+                min-width: 100%;
+            }
+
+            .input-wrapper {
+                width: 100%;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            input[type="password"],
+            input[type="number"],
+            input[type="url"],
+            input[type="search"] {
+                width: 100%;
+                min-width: 100%;
+                font-size: 16px;
+            }
+
+            input[type="time"],
+            input[type="date"],
+            input[type="datetime-local"],
+            input[type="week"],
+            input[type="month"] {
+                width: 100%;
+                min-width: 100%;
+                font-size: 16px;
+            }
+
+            input[type="range"] {
+                width: 100%;
+            }
+
+            input[type="file"] {
+                width: 100%;
+            }
+
+            input[type="file"]::file-selector-button {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            input[type="button"],
+            input[type="reset"],
+            input[type="submit"] {
+                width: 100%;
+                padding: 12px 20px;
+                font-size: 16px;
+            }
+
+            input[type="image"] {
+                width: 100%;
+            }
+
+            .checkbox-group,
+            .radio-group {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .container {
+                padding: 0 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.5em;
+            }
+
+            .section {
+                padding: 15px;
+            }
+
+            .code-editor {
+                font-size: 11px;
+                padding: 12px;
+            }
+
+            .code-editor code {
+                line-height: 1.6;
+            }
+        }
     </style>
 </head>
 <body>
