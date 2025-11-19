@@ -12,11 +12,11 @@
         }
 
         body {
-            background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+            background: #ffffff;
             font-family: 'Courier New', monospace;
             padding: 40px 20px;
             min-height: 100vh;
-            color: #e0e0e0;
+            color: #000000;
         }
 
         .header {
@@ -26,12 +26,8 @@
 
         .header h1 {
             font-size: 3em;
-            background: linear-gradient(135deg, #ffffff 0%, #666666 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: #000000;
             margin-bottom: 10px;
-            text-shadow: 0 0 30px rgba(128, 128, 128, 0.5);
         }
 
         .container {
@@ -45,22 +41,22 @@
             gap: 40px;
             margin-bottom: 40px;
             padding: 30px;
-            background-color: #1a1a1a;
+            background-color: #ffffff;
             border-radius: 10px;
-            border: 1px solid #333333;
+            border: 1px solid #cccccc;
         }
 
         .code-editor {
             flex: 1;
-            background-color: #1e1e1e;
+            background-color: #f5f5f5;
             border-radius: 8px;
             padding: 20px;
-            color: #e0e0e0;
+            color: #000000;
             font-size: 14px;
             line-height: 2;
             position: relative;
             overflow-x: auto;
-            border: 1px solid #3e3e3e;
+            border: 1px solid #cccccc;
             min-width: 300px;
         }
 
@@ -69,7 +65,7 @@
             position: absolute;
             top: 10px;
             left: 15px;
-            color: #888;
+            color: #666666;
             font-size: 12px;
             display: flex;
             align-items: center;
@@ -83,9 +79,9 @@
             left: 100px;
             width: 12px;
             height: 12px;
-            background: #666666;
+            background: #999999;
             border-radius: 50%;
-            box-shadow: 20px 0 0 #888888, 40px 0 0 #aaaaaa;
+            box-shadow: 20px 0 0 #bbbbbb, 40px 0 0 #cccccc;
         }
 
         .code-editor code {
@@ -95,15 +91,15 @@
         }
 
         .tag {
-            color: #888888;
+            color: #000000;
         }
 
         .attribute {
-            color: #aaaaaa;
+            color: #000000;
         }
 
         .value {
-            color: #cccccc;
+            color: #000000;
         }
 
         .number {
@@ -132,7 +128,7 @@
         input[type="url"],
         input[type="search"] {
             padding: 8px 12px;
-            border: 2px solid #444;
+            border: 2px solid #000000;
             border-radius: 4px;
             background-color: #fff;
             color: #000;
@@ -165,23 +161,23 @@
             width: 20px;
             height: 20px;
             cursor: pointer;
-            accent-color: #666666;
+            accent-color: #000000;
         }
 
         input[type="radio"] {
             width: 20px;
             height: 20px;
             cursor: pointer;
-            accent-color: #666666;
+            accent-color: #000000;
         }
 
         input[type="file"] {
-            color: #fff;
+            color: #000;
             cursor: pointer;
         }
 
         input[type="file"]::file-selector-button {
-            background-color: #333333;
+            background-color: #000000;
             color: white;
             padding: 8px 16px;
             border: none;
@@ -194,7 +190,7 @@
         input[type="button"],
         input[type="reset"],
         input[type="submit"] {
-            background-color: #333333;
+            background-color: #000000;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -208,7 +204,7 @@
         input[type="button"]:hover,
         input[type="reset"]:hover,
         input[type="submit"]:hover {
-            background-color: #555555;
+            background-color: #333333;
         }
 
         input[type="time"],
@@ -217,7 +213,7 @@
         input[type="week"],
         input[type="month"] {
             padding: 8px 12px;
-            border: 2px solid #444;
+            border: 2px solid #000000;
             border-radius: 4px;
             background-color: #fff;
             color: #000;
@@ -228,23 +224,23 @@
         input[type="color"] {
             width: 60px;
             height: 40px;
-            border: 2px solid #444;
+            border: 2px solid #000000;
             border-radius: 4px;
             cursor: pointer;
         }
 
         input[type="range"] {
             width: 200px;
-            accent-color: #666666;
+            accent-color: #000000;
         }
 
         .hidden-input-note {
-            color: #888;
+            color: #666666;
             font-style: italic;
         }
 
         input[type="image"] {
-            background-color: #333333;
+            background-color: #000000;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -610,7 +606,7 @@
             </div>
             <div class="input-container">
                 <div class="input-wrapper">
-                    <input type="image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath fill='%23fff' d='M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z'/%3E%3C/svg%3E" alt="Anexar imagem" style="background-color: #333333; padding: 10px 20px; border-radius: 4px; cursor: pointer;">
+                    <input type="image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath fill='%23fff' d='M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z'/%3E%3C/svg%3E" alt="Anexar imagem" style="background-color: #000000; padding: 10px 20px; border-radius: 4px; cursor: pointer;">
                 </div>
             </div>
         </div>
